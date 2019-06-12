@@ -1,0 +1,1 @@
+The folder contain the shell, navigation, manipulating and working files.
