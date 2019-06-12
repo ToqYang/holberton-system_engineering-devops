@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -una *.html . ..  
+cp -n *.html . ..  
