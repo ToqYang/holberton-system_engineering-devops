@@ -1,0 +1,1 @@
+We can find all of relationated with permissions.
