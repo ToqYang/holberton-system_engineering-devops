@@ -1,0 +1,1 @@
+This is learning about redirections and files of Shell.
