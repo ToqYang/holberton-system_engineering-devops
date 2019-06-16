@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type d | ls -lRa
+find . -type d -exec ls -lRa '{}' '+'
