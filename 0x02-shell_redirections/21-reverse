@@ -1,2 +1,2 @@
 #!/bin/bash
-rev 2>$1
+rev 1>&2
