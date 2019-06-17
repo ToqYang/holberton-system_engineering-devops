@@ -1,0 +1,1 @@
+We find shell ini, variables, expansions, shell arithmetic alias 
