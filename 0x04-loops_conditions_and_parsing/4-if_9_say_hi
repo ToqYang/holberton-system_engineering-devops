@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Loop with while in bash script
 i=0
-while [ $i -lt 9 ]; do
+while [ $i -lt 10 ]; do
 
-    if [ $i -eq 8 ]; then
+    if [ $i -eq 9 ]; then
 	echo "Hi"
     fi
 
