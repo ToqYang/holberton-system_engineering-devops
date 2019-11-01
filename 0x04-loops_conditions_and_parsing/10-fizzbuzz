@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Print:
+# FizzBuzz if is multiple of 3 and 5
+# Fizz if is multiple of 3
+# Buzz if is multiple of 5
+i=1
+for i in {1..20}; do
+    if [ $((i % 15)) -eq 0 ]; then
+	echo "FizzBuzz"
+
+    elif [ $((i % 3)) -eq 0 ]; then
+	echo "Fizz"
+
+    elif [ $((i % 5)) -eq 0 ]; then
+	echo "Buzz"
+
+    else
+	echo $i
+    fi
+
+    i=$((i+1))
+done
