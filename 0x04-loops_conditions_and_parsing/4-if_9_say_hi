@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Loop with while in bash script
+# Loop print 10 Holberton School but in the 9 iteration print Hi
 i=0
 while [ $i -lt 10 ]; do
 

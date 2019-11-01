@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Loop with while in bash script
+# Print a message about the number iteration
 i=1
 while [ $i -lt 11 ]; do
 
