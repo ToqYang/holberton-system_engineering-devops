@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Loop with while in bash script
+i=0
+while [ $i -le 10 ]; do
+    echo "Holberton School"
+    i=$((i+1))
+done
