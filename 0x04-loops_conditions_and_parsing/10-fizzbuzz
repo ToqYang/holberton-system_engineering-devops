@@ -4,7 +4,7 @@
 # Fizz if is multiple of 3
 # Buzz if is multiple of 5
 i=1
-for i in {1..20}; do
+for i in {1..100}; do
     if [ $((i % 15)) -eq 0 ]; then
 	echo "FizzBuzz"
 
