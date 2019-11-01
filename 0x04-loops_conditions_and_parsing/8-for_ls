@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Print a message about the number iteration
+for i in "$(ls)"; do
+    echo $i
+done
