@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# List all your proccess
+ps -aux
