@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# List the procces name that contain the word bash
+pgrep -l "bash"
