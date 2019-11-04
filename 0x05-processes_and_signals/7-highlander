@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# When receive trap print I am invencible
+trap "I am invincible!!!" SIGTERM
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
