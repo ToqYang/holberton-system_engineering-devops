@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Table to print TCP and UDP, listening sockets and PID
+netstat -lp
