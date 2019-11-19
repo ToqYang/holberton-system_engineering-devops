@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # Look at the ping 5 times
-ARGV=("$@")
-ping -c 5 ${ARGV[1]}
+arg=("$@")
+if [ "$#" -eq 1 ]; then
+    ping -c 5 ${arg[0]}
+else
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+fi
