@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Look at the ping 5 times
+ARGV=("$@")
+ping -c 5 ${ARGV[1]}
