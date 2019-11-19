@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Look the hostname and listening from two terminals
+nc -l 98
