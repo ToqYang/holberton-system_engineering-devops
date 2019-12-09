@@ -1,7 +1,7 @@
 # Make a file
 
-file {'confma':
-  ensure  => 'file',
+file {'holberton':
+  ensure  => 'holberton',
   path    => '/tmp/holberton',
   mode    => '0744',
   owner   => 'www-data',
