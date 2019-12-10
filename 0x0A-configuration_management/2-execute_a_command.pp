@@ -1,5 +1,5 @@
 # Execute command
 
-exec { 'killmenow':
+exec {'killmenow':
   command => '/usr/bin/pkill --full killmenow'
 }
