@@ -2,5 +2,5 @@
 
 exec { 'auth':
   path    => '/bin',
-  command => 'echo -e "PasswordAuthentication no\nIdentityFile ~/.ssh/identity" > /etc/ssh/ssh_config'
+  command => 'echo "PasswordAuthentication no\nIdentityFile ~/.ssh/holberton" > /etc/ssh/ssh_config'
 }
