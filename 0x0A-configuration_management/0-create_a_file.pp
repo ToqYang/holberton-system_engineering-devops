@@ -1,7 +1,7 @@
 # Make a file
 
-file {'holberton':
-  ensure  => 'holberton',
+file {'/tmp/holberton':
+  ensure  => 'filehol',
   path    => '/tmp/holberton',
   mode    => '0744',
   owner   => 'www-data',
