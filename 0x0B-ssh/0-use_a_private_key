@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # Script that allow the connection with my server
-ssh -i ~/.ssh/holberton ubuntu@35.237.192.177
-
+ssh -i ~/.ssh/holberton ubuntu@34.73.238.143
