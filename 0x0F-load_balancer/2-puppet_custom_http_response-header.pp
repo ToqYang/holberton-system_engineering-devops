@@ -9,6 +9,7 @@ exec {'Update':
 
 
 exec {'res':
+  environment => ["ht=${hostname}"],
   provider => shell,
-  command  => 'sudo sed -i "11i\\\tadd_header X-Served-By $hostname;" /etc/nginx/nginx.conf; sudo service nginx restart;',
+  command  => 'sudo sed -i "11i\\\tadd_header X-Served-By $ht;" /etc/nginx/nginx.conf; sudo service nginx restart;',
 }
