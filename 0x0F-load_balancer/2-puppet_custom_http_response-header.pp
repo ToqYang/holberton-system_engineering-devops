@@ -7,7 +7,7 @@ exec {'Update':
   before   => Exec['res'],
 }
 
-exec {'res':}
+exec {'res':
   provider => shell,
   command  => 'sudo sed -i "11i\\\tadd_header X-Served-By ${hostname};" /etc/nginx/nginx.conf; sudo service nginx restart;',
 }
