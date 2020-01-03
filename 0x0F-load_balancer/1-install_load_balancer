@@ -1,3 +1,15 @@
 #!/usr/bin/env bash
-# Install the load balancer
+# Install balancer to drive the traffic
+
+sudo apt-get -y upgrade
+sudo apt-get -y update
+sudo apt-get -y install haproxy
+sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.default
+echo "listen appname
+        bind *:80
+        mode http
+        balance roundrobin
+        server 946-web-01 34.73.238.143:80 check
+        server 946-web-02 35.229.20.11:80 check" | sudo tee -a /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
 
