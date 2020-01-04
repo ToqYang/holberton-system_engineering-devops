@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Delete the port [::]:80 and leave only the 80
+
+sed -i '22d' /etc/nginx/sites-available/default
+sudo service nginx restart
