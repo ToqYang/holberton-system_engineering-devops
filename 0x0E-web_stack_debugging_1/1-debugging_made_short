@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Short change of 8080 to 80
 sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sudo service nginx restart
 killall nginx
