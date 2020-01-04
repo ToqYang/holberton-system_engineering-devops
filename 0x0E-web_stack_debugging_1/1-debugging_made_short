@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Short change of 8080 to 80
-sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-sudo service nginx stop
-service nginx status
+sudo sed -i "s/listen 8080 default_server/listen 80 default_server/i" /etc/nginx/sites-enabled/default
+sudo sed -i "s/listen \[::\]:8080 default_server/listen [::]:80 default_server/i" /etc/nginx/sites-enabled/default
+sudo service nginx status
