@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Run Nginx as Nginx
+# Change the user and group of /etc/nginx to execute how that user
 sudo pkill apache2
-sudo sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 chmod 644 /etc/nginx/nginx.conf
-sudo sed -i '1a user nginx;' /etc/nginx/nginx.conf
+sudo sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
+sudo chown nginx:nginx -R /etc/nginx
 sudo -u nginx service nginx restart
