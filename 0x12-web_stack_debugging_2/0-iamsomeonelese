@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Execute the command how other user
 sudo -u $1 whoami
+
