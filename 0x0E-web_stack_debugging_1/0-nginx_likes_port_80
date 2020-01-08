@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# Run Nginx as Nginx
-sudo pkill apache2
-sudo sed -i "s/listen 80 default_server/listen 8080 default_server/i" /etc/nginx/sites-enabled/default
-sudo sed -i "s/listen \[::\]:80 default_server/listen [::]:8080 default_server/i" /etc/nginx/sites-enabled/default
-chmod 644 /etc/nginx/nginx.conf
-sudo sed -i '1a user nginx;' /etc/nginx/nginx.conf
-sudo -u nginx service nginx restart
+# Delete the port [::]:8080 and leave only the 80
+sudo sed -i "s/listen 8080 default_server/listen 80 default_server/i" /etc/nginx/sites-enabled/default
+sudo sed -i "s/listen \[::\]:8080 default_server/listen [::]:80 default_server/i" /etc/nginx/sites-enabled/default
+sudo service nginx restart
