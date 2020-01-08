@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # Run Nginx as Nginx 
-sudo sed -i '1a user nginx;' etc/nginx/nginx.conf
+sudo sed -i '1a user nginx;' /etc/nginx/nginx.conf
 sudo service nginx start
 sudo service nginx restart
-
-
