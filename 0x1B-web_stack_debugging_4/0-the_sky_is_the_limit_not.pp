@@ -3,7 +3,7 @@
 
 exec {'fx-limit':
   provider => shell,
-  command  => 'sudo sed -i '5s/ULIMIT='-n 15'/ULIMIT='-n 4096'/' /etc/default/nginx',
+  command  => 'sudo sed -i "s/ULIMIT=\"-n 15\"/ULIMIT=\"-n 4096\"/i" /etc/default/nginx',
   before   => Exec['res'],
 }
 
