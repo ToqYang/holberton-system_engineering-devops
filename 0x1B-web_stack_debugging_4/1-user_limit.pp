@@ -11,8 +11,3 @@ exec {'change-soft':
   command  => 'sudo sed -i "s/holberton soft nofile 4/holberton soft nofile 4000/" /etc/security/limits.conf',
   before   => Exec['upd-nginx'],
 }
-
-exec {'upd-nginx':
-  provider => shell,
-  command  => 'sudo service nginx restart;',
-}
