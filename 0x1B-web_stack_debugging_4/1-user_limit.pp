@@ -9,5 +9,4 @@ exec {'change-hard':
 exec {'change-soft':
   provider => shell,
   command  => 'sudo sed -i "s/holberton soft nofile 4/holberton soft nofile 4000/" /etc/security/limits.conf',
-  before   => Exec['upd-nginx'],
 }
